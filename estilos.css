@@ -9,15 +9,15 @@ minmax(min, max) agregar un valor minimo y maximo para el tamaño al hacer respo
 .container {
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     /* grid-template-rows: 1fr; */
     /* grid-template: 1fr 1fr / 1fr; */
     grid-column-gap: 30px;
-    grid-row-gap: 50px;
+    grid-row-gap: 10px;
     height: 100vh;
-    grid-template-areas: "header header"
+    /* grid-template-areas: "header header"
                          "left contenido"
-                         "footer footer";
+                         "footer footer"; */
 
 }
 
@@ -31,18 +31,21 @@ minmax(min, max) agregar un valor minimo y maximo para el tamaño al hacer respo
 }
 
 .header {
-    grid-area: header;
+    /* grid-area: header; */
+    grid-column: 1 / span 4;
 }
 
 .contenido{
-    grid-area: contenido;
+    /* grid-area: contenido; */
 
 }
 
 .footer {
-    grid-area: footer;
+    /* grid-area: footer; */
+    grid-column: 1 / span 4;
+    
 }
 
 .left {
-    grid-area: left;
+    /* grid-area: left; */
 }
