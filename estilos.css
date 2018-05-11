@@ -1,5 +1,7 @@
 body {
     font-family: arial;
+    align-items: center;
+    margin: 0;
 }
 /* Unidad de medida: fracciones fr distrubuye el espacio disponible en formas iguales.
 Funciones:
@@ -9,7 +11,7 @@ minmax(min, max) agregar un valor minimo y maximo para el tamaño al hacer respo
 .container {
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
-    grid-template-columns: repeat(6, 60px);
+    grid-template-columns: 10px repeat(6, 1fr) 10px;
     grid-template-rows: 100px 50px 50px;
     /* grid-template: 1fr 1fr / 1fr; */
     grid-column-gap: 10px;
@@ -21,6 +23,8 @@ minmax(min, max) agregar un valor minimo y maximo para el tamaño al hacer respo
     /* justify-content: center; */
     align-items: center;
     border: 1px solid yellow;
+    
+    
 
 }
 
@@ -36,6 +40,24 @@ minmax(min, max) agregar un valor minimo y maximo para el tamaño al hacer respo
 .header {
     /* grid-area: header; */
     border: 1px solid red;
+}
+
+.title {
+    border: 1px solid red;
+    grid-column: 3 / span 4;    
+}
+
+.biz {
+    border: 1px solid red;
+    grid-column: 2 / span 6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5px; 
+}
+
+.call-to-action {
+    border: 1px solid red;
+    grid-column: 4 / span 2;
 }
 
 
