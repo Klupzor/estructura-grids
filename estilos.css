@@ -30,7 +30,7 @@ minmax(min, max) agregar un valor minimo y maximo para el tamaño al hacer respo
 
 
 
-.header {
+header {
     /* grid-area: header; */
     border: 1px solid red;
 }
@@ -56,7 +56,7 @@ minmax(min, max) agregar un valor minimo y maximo para el tamaño al hacer respo
 }
 
 
-.footer {
+footer {
     /* grid-area: footer; */
     border: 1px solid red;
     /* grid-column: 1 / span 4; */
